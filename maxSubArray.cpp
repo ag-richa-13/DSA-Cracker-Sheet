@@ -7,7 +7,7 @@ using namespace std;
 
 
 // Brute Force 
-int maxSubArray(int arr[], int n)
+int maxSubArray(int nums[], int n)
 {
     int maxSum = INT_MIN;
 
@@ -19,7 +19,7 @@ int maxSubArray(int arr[], int n)
             for(int k = i; k <= j; k++)
 
             {
-                sum += arr[k];
+                sum += nums[k];
             }
             maxSum = max(maxSum, sum);
         }

@@ -4,14 +4,14 @@
 
 using namespace std;
 
-int reverseArray(int arr[], int n)
+int reverseArray(int nums[], int n)
 {
     int st = 0;
     int en = n-1;
     while(st < en) {
-        int temp = arr[st];
-        arr[st] = arr[en];
-        arr[en] = temp;
+        int temp = nums[st];
+        nums[st] = nums[en];
+        nums[en] = temp;
         st++;
         en--;
     }

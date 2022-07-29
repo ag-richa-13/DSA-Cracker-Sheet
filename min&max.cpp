@@ -7,33 +7,33 @@ using namespace std;
 class minMax
 {
 public:
-    void getMinMax(int arr[], int n)
+    void getMinMax(int nums[], int n)
     {
         int min, max;
         if(n == 1)
         {
-            min = max = arr[0];
+            min = max = nums[0];
         }
 
-        if(arr[0] < arr[1])
+        if(nums[0] < nums[1])
         {
-            min = arr[0];
-            max  = arr[1];
+            min = nums[0];
+            max  = nums[1];
         }
         else {
-            min = arr[1];
-            max = arr[0];
+            min = nums[1];
+            max = nums[0];
         }
 
         for(int i = 2; i < n; i++)
         {
-            if(arr[i] < min)
+            if(nums[i] < min)
             {
-                min = arr[i];
+                min = nums[i];
             }
-            else if(arr[i] > max)
+            else if(nums[i] > max)
             {
-                max = arr[i];
+                max = nums[i];
             }
         }
         cout<<"min: "<<min<<endl;

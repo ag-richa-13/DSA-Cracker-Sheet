@@ -5,14 +5,14 @@
 
 using namespace std;
 
-bool conDupli(int arr[], int n)
+bool conDupli(int nums[], int n)
 {
     // time complexity ecxeed  = O(n^2)
     for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (arr[i] == arr[j])
+            if (nums[i] == nums[j])
             {
                 return true;
             }
