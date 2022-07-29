@@ -1,4 +1,4 @@
-// Que.1-)  Minimum and maximum of an array
+// Que.01  Minimum and maximum of an array
 
 #include <iostream>
 
